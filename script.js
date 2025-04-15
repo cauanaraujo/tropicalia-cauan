@@ -1,5 +1,26 @@
-document.addEventListener("DOMContentLoaded", function(){
-    const aumenTaFonteBotao = document.getElementById("aumentar-fonte");
+document.addEventListener('DOMContentLoaded', function(){
+    
+    const botaoDeAcessibilidae = document.getElementById('botao-acessibilidade');
+    const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidae');
 
+    botaoDeAcessibilidae.addEventListener('click', function(){
+        botaoDeAcessibilidae.classList.toggle('rotacao-botao');
+        opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
+    })
+
+
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
+    
     let tamanhoAtualFonte = 1;
-})
+    
+    aumentaFonteBotao.addEventListener('click', function(){
+    tamanhoAtualFonte += 0.1;
+    document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+    });
+    
+    diminuiFonteBotao.addEventListener('click', function(){
+    tamanhoAtualFonte -= 0.1;
+    document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+    });
+    });
