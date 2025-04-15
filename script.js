@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     
-    const botaoDeAcessibilidae = document.getElementById('botao-acessibilidade');
+    const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
     const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidae');
 
     botaoDeAcessibilidae.addEventListener('click', function(){
